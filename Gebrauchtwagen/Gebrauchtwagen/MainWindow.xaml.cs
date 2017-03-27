@@ -23,6 +23,25 @@ namespace Gebrauchtwagen
         public MainWindow()
         {
             InitializeComponent();
+
+            
+            
+        }
+
+        private void button_hochladen_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 win2 = new Window2();
+            win2.Show();
+        }
+
+      
+
+        private void comboBox_Marke_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(comboBox_Marke.SelectedValue.Equals("BMW"))
+            {
+                comboBox_Modell.Items.RemoveAt(0);
+            }
         }
     }
 }

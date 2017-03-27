@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gebrauchtwagen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Gebrauchtwagen" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="button_hochladen" Content="Hochladen" HorizontalAlignment="Left" Height="73" Margin="349,236,0,0" VerticalAlignment="Top" Width="158" Click="button_hochladen_Click"/>
+        <ComboBox x:Name="comboBox_Marke" HorizontalAlignment="Left" Height="22" Margin="27,67,0,0" VerticalAlignment="Top" Width="133" SelectionChanged="comboBox_Marke_SelectionChanged" >
+            <ComboBoxItem>BMW</ComboBoxItem>
+            <ComboBoxItem>Audi</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="comboBox_Modell" HorizontalAlignment="Left" Height="22" Margin="244,67,0,0" VerticalAlignment="Top" Width="133">
+            <ComboBoxItem>M4</ComboBoxItem>
+        </ComboBox>
+
     </Grid>
 </Window>
