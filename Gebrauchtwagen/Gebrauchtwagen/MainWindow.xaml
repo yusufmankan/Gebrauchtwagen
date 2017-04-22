@@ -5,11 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gebrauchtwagen"
         mc:Ignorable="d"
-        Title="Gebrauchtwagen" Height="350" Width="525">
+        Title="Gebrauchtwagen"  Loaded="Window_Loaded" Height="417.932" Width="705.169">
     <Grid>
         <Button x:Name="button_hochladen" Content="Hochladen" HorizontalAlignment="Left" Height="73" Margin="730,161,-371,0" VerticalAlignment="Top" Width="158" Click="button_hochladen_Click"/>
-        <Grid HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="517">
-            <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="35" Margin="0,10,0,0" VerticalAlignment="Top" Width="517" SelectionChanged="dataGrid_SelectionChanged"/>
+        <Grid HorizontalAlignment="Left" Height="387" VerticalAlignment="Top" Width="697">
+            <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,44,0,0" VerticalAlignment="Top" Width="697" MouseDoubleClick="dataGrid_MouseDoubleClick" IsReadOnly="True" Height="343"/>
+            <Menu x:Name="menu" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="697">
+                <MenuItem Header="Details" Click="auto_details"></MenuItem>
+            </Menu>
         </Grid>
 
     </Grid>

@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gebrauchtwagen"
         mc:Ignorable="d"
-        Title="Hochladen" Height="300" Width="484.519">
+        Title="Details" Height="300" Width="484.519">
     <Grid>
-        
+        <ComboBox x:Name="comboBox_Marke" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,42,0,0"/>
+
     </Grid>
 </Window>

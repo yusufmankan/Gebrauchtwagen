@@ -81,19 +81,23 @@ namespace Gebrauchtwagen
 
         private void button_hochladen_Click(object sender, RoutedEventArgs e)
         {
-            Window2 win2 = new Window2();
-            win2.Show();
+            
         }
 
       
 
-        
+    
 
-        private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void dataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             var fahrzeuges = dataGrid.SelectedItem as Fahrzeug;
             WriteLine("Clicked: " + fahrzeuges?.ToString());
-            
+        }
+
+        private void auto_details(object sender, RoutedEventArgs e)
+        {
+            Window2 win2 = new Window2();
+            win2.Show();
         }
     }
 }
