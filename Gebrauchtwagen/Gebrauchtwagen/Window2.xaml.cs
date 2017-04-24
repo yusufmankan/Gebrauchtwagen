@@ -50,12 +50,12 @@ namespace Gebrauchtwagen
             string leistung = textBox_Leistung.Text;
             string beschreibung = textBox_Beschreibung.Text;
             string treibstoff = textBox_Treibstoff.Text;
-            string fid = textBox_Fid.Text;
+            
 
 
 
             string connstring = ConfigurationManager.AppSettings["connstring"];
-            string cmd = ("INSERT INTO fahrzeug (Fid, Marke, Model, Preis, Kilometerstand, Baujahr, Treibstoff, Getriebeart, Leistung, Beschreibung)" + "VALUES ('" + fid + "', '" + marke + "', '" + model + "', '" + preis + "', '" + km + "', '" + baujahr + "', '" + getriebe + "', '" + leistung + "','" + beschreibung + "');");
+            string cmd = ("INSERT INTO fahrzeug (Fid, Marke, Model, Preis, Kilometerstand, Baujahr, Treibstoff, Getriebeart, Leistung, Beschreibung)" + "VALUES ('" + " " + "', '" + marke + "', '" + model + "', '" + preis + "', '" + km + "', '" + baujahr + "', '" + getriebe + "', '" + leistung + "','" + beschreibung + "');");
             MySqlConnection conDataBase = new MySqlConnection(connstring);
             MySqlCommand cmdDataBase = new MySqlCommand(cmd, conDataBase);
             MySqlDataReader myReader;

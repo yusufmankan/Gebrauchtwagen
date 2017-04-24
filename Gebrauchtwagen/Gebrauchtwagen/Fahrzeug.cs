@@ -8,15 +8,15 @@ namespace Gebrauchtwagen
 {
     class Fahrzeug
     {
-        public string fid { get; set; }
+        public int fid { get; set; }
         public string marke { get; set; }
         public string model { get; set; }
-        public string preis { get; set; }
-        public string kilometerstand { get; set; }
-        public string baujahr { get; set; }
+        public int preis { get; set; }
+        public int kilometerstand { get; set; }
+        public int baujahr { get; set; }
         public string treibstoff { get; set; }
         public string getriebeart { get; set; }
-        public string leistung { get; set; }
+        public int leistung { get; set; }
         public string beschreibung { get; set; }
 
 

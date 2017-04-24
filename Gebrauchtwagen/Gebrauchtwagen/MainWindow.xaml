@@ -5,14 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gebrauchtwagen"
         mc:Ignorable="d"
-        Title="Gebrauchtwagen"  Loaded="Window_Loaded" Height="417.932" Width="705.169">
+        Title="Gebrauchtwagen"  Loaded="Window_Loaded" Height="569.587" Width="1135.445">
     <Grid>
-        <Button x:Name="button_hochladen" Content="Hochladen" HorizontalAlignment="Left" Height="73" Margin="730,161,-371,0" VerticalAlignment="Top" Width="158" Click="button_hochladen_Click"/>
-        <Grid HorizontalAlignment="Left" Height="387" VerticalAlignment="Top" Width="697">
-            <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,44,0,0" VerticalAlignment="Top" Width="697" MouseDoubleClick="dataGrid_MouseDoubleClick" IsReadOnly="True" Height="343"/>
+        <Grid>
+            <DataGrid x:Name="dataGrid" Margin="0,44,0,0" MouseDoubleClick="dataGrid_MouseDoubleClick" IsReadOnly="True" Height="495" VerticalAlignment="Top" HorizontalAlignment="Left" Width="726"/>
             <Menu x:Name="menu" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="697">
                 <MenuItem Header="Hochladen" Click="auto_hochladen"></MenuItem>
             </Menu>
+            <RadioButton x:Name="radioButton_BMW" Content="BMW" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="753,113,0,0" Height="36" Width="127" Checked="radioButton_BMW_Checked"/>
+            <RadioButton x:Name="radioButton_Mercedes" Content="Mercedes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="753,175,0,0" Height="36" Width="127" Checked="radioButton_Mercedes_Checked"/>
+            <RadioButton x:Name="radioButton_VW" Content="VW" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="753,233,0,0" Height="36" Width="127" Checked="radioButton_VW_Checked"/>
         </Grid>
 
     </Grid>

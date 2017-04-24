@@ -27,7 +27,6 @@
             <TextBox x:Name="textBox_Getriebeart" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="143,208,0,0"/>
             <TextBox x:Name="textBox_Leistung" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="143,242,0,0"/>
             <TextBox x:Name="textBox_Beschreibung" HorizontalAlignment="Left" Height="107" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="269" Margin="143,284,0,0"/>
-            <TextBox x:Name="textBox_Fid" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="325,208,0,0"/>
         </Grid>
         <Button x:Name="button_hochladen" Content="Hochladen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="165" Margin="379,40,0,0" Height="64" Click="button_hochladen_Click"/>
     </Grid>
