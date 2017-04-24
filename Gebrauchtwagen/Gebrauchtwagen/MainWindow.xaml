@@ -11,7 +11,7 @@
         <Grid HorizontalAlignment="Left" Height="387" VerticalAlignment="Top" Width="697">
             <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,44,0,0" VerticalAlignment="Top" Width="697" MouseDoubleClick="dataGrid_MouseDoubleClick" IsReadOnly="True" Height="343"/>
             <Menu x:Name="menu" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="697">
-                <MenuItem Header="Details" Click="auto_details"></MenuItem>
+                <MenuItem Header="Hochladen" Click="auto_hochladen"></MenuItem>
             </Menu>
         </Grid>
 

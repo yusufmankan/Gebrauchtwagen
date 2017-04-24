@@ -5,9 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gebrauchtwagen"
         mc:Ignorable="d"
-        Title="Details" Height="300" Width="484.519">
+        Title="Hochladen" Height="432" Width="591.519">
     <Grid>
-        <ComboBox x:Name="comboBox_Marke" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,42,0,0"/>
-
+        <TextBox x:Name="textBox_Marke" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="143,10,0,0"/>
+        <TextBox x:Name="textBox_Model" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="143,41,0,0"/>
+        <TextBox x:Name="textBox_Preis" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="143,75,0,0"/>
+        <TextBox x:Name="textBox_Kilometerstand" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="143,109,0,0"/>
+        <TextBox x:Name="textBox_Treibstoff" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="143,177,0,0"/>
+        <TextBox x:Name="textBox_Baujahr" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="143,143,0,0"/>
+        <Label x:Name="label_Marke" Content="Marke" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <Label x:Name="label_Model" Content="Model" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,41,0,0" Height="29"/>
+        <Label x:Name="label_Treibstoff" Content="Treibstoff" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,177,0,0"/>
+        <Label x:Name="label_PReis" Content="Preis" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,75,0,0" Height="29"/>
+        <Label x:Name="label_Kilometerstand" Content="Kilometerstand" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,109,0,0" Height="29"/>
+        <Label x:Name="label_Baujahr" Content="Baujahr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,143,0,0" Height="29"/>
+        <Label x:Name="label_Getriebeart" Content="Getriebeart" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,208,0,0"/>
+        <Label x:Name="label_Leistung" Content="Leistung" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,239,0,0"/>
+        <Label x:Name="label_Beschreibung" Content="Beschreibung" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,270,0,0"/>
+        <Grid/>
+        <Grid Margin="0,4,0,-4">
+            <TextBox x:Name="textBox_Getriebeart" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="143,208,0,0"/>
+            <TextBox x:Name="textBox_Leistung" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="143,242,0,0"/>
+            <TextBox x:Name="textBox_Beschreibung" HorizontalAlignment="Left" Height="107" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="269" Margin="143,284,0,0"/>
+            <TextBox x:Name="textBox_Fid" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="325,208,0,0"/>
+        </Grid>
+        <Button x:Name="button_hochladen" Content="Hochladen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="165" Margin="379,40,0,0" Height="64" Click="button_hochladen_Click"/>
     </Grid>
 </Window>
